@@ -3,16 +3,15 @@ num? _r;
 Lingkaran(num? r){
   this._r = r;
 }
-set luas(){
+get luas {
   var l = 22 / 7 * _r! * _r!;
-   return l;
+   return l.toStringAsFixed(2);
 }
-
 serR(num? r) => _r = r;
 num? getR() => _r;
 
-hitungKeliling(){
+get keliling {
   var kell = 2 * 22 / 7 * _r!;
-  print("Keliling Lingkaran : " +kell.toStringAsFixed(2));
+  return kell.toStringAsFixed(2);
   }
 }
